@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كوني تواصل</title>
+
+    <style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+}
+
+.container {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border: 1px solid #c5c5c5;
+    overflow: hidden;
+    position: relative;
+       text-align: right;
+}
+h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+      text-align: right;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s;
+    text-align: right;
+}
+
+::placeholder {
+    color: #ddd;
+}
+button {
+    width: 100%;
+    padding: 15px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>تواصل معنا</h2>
+
+        <form action="https://formspree.io/f/mqerobpa" method="post">
+            <input type="text" id="name" name="name" placeholder="الاسم" required>
+
+            <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
+
+            <input type="tel" id="phone" name="phone" placeholder="رقم الهاتف" required>
+
+            <textarea
+                name="message"
+                id="message"
+                placeholder="كلمة المرور"></textarea>
+
+            <button class="submit-btn" type="submit">ارسال</button>
+        </form>
+    </div>
+
+</body>
+</html>
